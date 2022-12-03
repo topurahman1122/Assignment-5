@@ -1,0 +1,57 @@
+.top-section {
+    width: auto;
+    height: 481px;
+    background-color: black;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.mid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+body {
+    background-color: #151515;
+    margin: auto;
+    padding: auto;
+}
+
+.mid-container {
+    background-color: #151515;
+    /* width: auto; */
+}
+
+#mid-sec {
+    background-color: #151515;
+}
+
+.marker {
+    display: flex;
+    justify-content: center;
+    margin-top: -17px;
+}
+
+.input-field {
+    width: 80px;
+    height: 40px;
+    padding: 0px 10px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin-top: -5px;
+}
+
+.calculation-area {
+    margin: auto;
+}
+
+.aside-container {
+    /* max-width: 19rem; */
+    width: auto;
+}

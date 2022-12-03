@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best Five</title>
+  <!-- Vanilla CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <section class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+  <main class="container">
+    <div class="container top-section text-center d-flex justify-content-center text-light align-items-center">
+      <div>
+
+        <h1>Select Your Best Five</h1>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br> officia consequat
+          duis
+          enim velit mollit. Exercitation veniam consequat sunt <br> nostrud amet.</p>
+      </div>
+    </div>
+    </section>
+    <!-- Player Section -->
+
+    <section class="mid-container mx-auto pt-3">
+      <div class=" mx-2 my-4">
+        <div class="player-grid ms-3 me-auto">
+          <!-- Player-1-->
+          <div class="card bg-black text-white" style="width: 16rem;">
+            <img src="images/players/1.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Lionel Messi</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-2-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/2.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Neymar Jr</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary disable"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-3-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/3.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Kylian Mbappe</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-4-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/4.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Vitor Machado</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-5-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/5.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Sergio Ramos</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-6-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/6.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Rento Sanches</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-7-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/1.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Vitor Machado</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-8-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/1.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Neymar Je</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <!-- Player-9-->
+          <div class="card bg-black text-white" style="width: 15.5rem;">
+            <img src="images/players/1.png" class="card-img-top" alt="...">
+            <div class="text-center card-body mt-4">
+              <h5 class="card-title">Lionel Messi</h5>
+              <p class="card-text">36 Gaols . 126 Assist</p>
+              <div class="text-center">
+                <!-- <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">SELECT</button>
+                </div> -->
+                <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;"
+                  onclick="addToCard(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="my-4 mx-auto aside-container">
+        <div class="card bg-black calculation-area" style="width: 16rem; height: 22.5rem;">
+          <div class="card-body">
+            <h3 class="text-white text-center card-title my-3">Selected-V- <span id="total-added-product">0</span></h3>
+            <div class="marker"><img src="images/marker.png" alt=""></div>
+            <ol class="text-white-50 fs-4 mt-3 text-center">
+              <tbody id="card-products">
+                <tr>
+                  <th>1</th>
+                  <td>Name Palayers</td>
+                </tr>
+              </tbody>
+            </ol>
+          </div>
+        </div>
+        <div class="card bg-black my-4 calculation-area" style="width: 16rem; height: 38rem;">
+          <div class="card-body">
+            <h3 class="text-white text-center card-title my-3">Budget</h3>
+            <div class="marker"><img src="images/marker.png" alt=""></div>
+            <div class="d-flex justify-content-between mt-5">
+              <p class="fs-5 fw-semibold mx-2 text-light">Per Player</p> <input type="text" value=""
+                class="input-field text-light" id="perplayer-field">
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-3 my-2"><button id="btn-calculate"
+                type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: 0.55rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.25rem;">
+                Calculate
+              </button></div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="fs-5 fw-semibold mx-2 text-light">Player Expenses</p>
+              <p class="text-warning fs-5">$<span id="player-total">00</span></p>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <p class="fs-5 fw-semibold mx-2 text-light">Manager</p> <input type="text" value=""
+                class="input-field text-light" id="manager-field">
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <p class="fs-5 fw-semibold mx-2 text-light">Coach</p> <input type="text" value=""
+                class="input-field text-light" id="coach-field">
+            </div>
+            <div class="d-flex justify-content-center my-2"><button id="btn-total" type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: 0.55rem; --bs-btn-padding-x: 5.5rem; --bs-btn-font-size: 1.25rem;">
+                Total
+              </button></div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="fs-5 fw-semibold mx-2 text-light">Player Expenses</p>
+              <p class="text-warning fs-5">$<span id="total-cost">00</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- Vanilla JavaScript -->
+  <script src="script/calculation.js"></script>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>
